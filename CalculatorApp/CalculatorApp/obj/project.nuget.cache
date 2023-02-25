@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "WDQXLJtFY/dBSWApAdjH3/Y9/wtVN9Tgv9RXAiWC5lkWdEBQMCfNPpKHuFnnWdD5Hq84xA0vv8CozljdTlq3rg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Haseeb Majoka\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\CalculatorApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Haseeb Majoka\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Haseeb Majoka\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Haseeb Majoka\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Haseeb Majoka\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Haseeb Majoka\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

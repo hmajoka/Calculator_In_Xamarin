@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculatorApp.Views.AboutPage"
+             xmlns:vm="clr-namespace:CalculatorApp.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <StackLayout Padding="20">
+        
+        <Frame BackgroundColor="WhiteSmoke" Padding="15" Margin="0,0,0,20">
+            <Label Text="0" FontSize="36" x:Name="LabelResult" FontAttributes="Bold" HorizontalOptions="End"></Label>
+        </Frame>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <!--1 Row-->
+            <Button Grid.Row="0" Grid.Column="0" Text="C" Padding="30" x:Name="BtnClear" Clicked="BtnClear_Clicked" FontSize="Large" FontAttributes="Bold" ></Button>
+            <Button Grid.Row="0" Grid.Column="1" Text="X" Padding="30" x:Name="BtnX" Clicked="BtnX_Clicked" FontSize="Large" FontAttributes="Bold" ></Button>
+            <Button Grid.Row="0" Grid.Column="2" Text="%" Padding="30" x:Name="BtnPercentage" Clicked="BtnPercentage_Clicked" FontSize="Large" FontAttributes="Bold" ></Button>
+            <Button Grid.Row="0" Grid.Column="3" Text="/" Padding="30" FontSize="Large" Clicked="BtnDivide_Clicked" FontAttributes="Bold" ></Button>
+            <!--2 Row-->
+            <Button Grid.Row="1" Grid.Column="0" Text="1" Padding="30" FontSize="Large" x:Name="BtnOne" Clicked="BtnOne_Clicked" FontAttributes="Bold"></Button>
+            <Button Grid.Row="1" Grid.Column="1" Text="2" Padding="30" FontSize="Large" Clicked="BtnCommon_Clicked" FontAttributes="Bold"></Button>
+            <Button Grid.Row="1" Grid.Column="2" Text="3" Padding="30" FontSize="Large" Clicked="BtnCommon_Clicked" FontAttributes="Bold"></Button>
+            <Button Grid.Row="1" Grid.Column="3" Text="*" Padding="30" FontSize="Large" Clicked="BtnMultiplication_Clicked" FontAttributes="Bold"></Button>
+            <!--3 Row-->
+            <Button Grid.Row="2" Grid.Column="0" Text="4" Padding="30" FontSize="Large" Clicked="BtnCommon_Clicked" FontAttributes="Bold"></Button>
+            <Button Grid.Row="2" Grid.Column="1" Text="5" Padding="30" FontSize="Large" Clicked="BtnCommon_Clicked" FontAttributes="Bold"></Button>
+            <Button Grid.Row="2" Grid.Column="2" Text="6" Padding="30" FontSize="Large" Clicked="BtnCommon_Clicked" FontAttributes="Bold"></Button>
+            <Button Grid.Row="2" Grid.Column="3" Text="-" Padding="30" FontSize="Large" Clicked="BtnSubtract_Clicked" FontAttributes="Bold"></Button>
+            <!--4 Row-->
+            <Button Grid.Row="3" Grid.Column="0" Text="7" Padding="30" FontSize="Large" Clicked="BtnCommon_Clicked" FontAttributes="Bold"></Button>
+            <Button Grid.Row="3" Grid.Column="1" Text="8" Padding="30" FontSize="Large" Clicked="BtnCommon_Clicked" FontAttributes="Bold"></Button>
+            <Button Grid.Row="3" Grid.Column="2" Text="9" Padding="30" FontSize="Large" Clicked="BtnCommon_Clicked" FontAttributes="Bold"></Button>
+            <Button Grid.Row="3" Grid.Column="3" Grid.RowSpan="2" Text="+" Padding="30" FontSize="Large" Clicked="BtnPlus_Clicked" FontAttributes="Bold"></Button>
+            <!--5 Row-->
+            <Button Grid.Row="4" Grid.Column="0" Text="." Padding="30" FontSize="Large" Clicked="BtnCommon_Clicked" FontAttributes="Bold"></Button>
+            <Button Grid.Row="4" Grid.Column="1" Text="0" Padding="30" FontSize="Large" Clicked="BtnCommon_Clicked" FontAttributes="Bold"></Button>
+            <Button Grid.Row="4" Grid.Column="2" Text="=" Padding="30" FontSize="Large" Clicked="BtnEqual_Clicked" FontAttributes="Bold"></Button>
+
+        </Grid>
+        
+    </StackLayout>
+    
+</ContentPage>
