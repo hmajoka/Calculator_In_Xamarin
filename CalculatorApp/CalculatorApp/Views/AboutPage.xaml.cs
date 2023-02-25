@@ -13,6 +13,7 @@ namespace CalculatorApp.Views
         string sign;
         string value;
         String Test;
+        int test;
         public AboutPage()
         {
             InitializeComponent();
